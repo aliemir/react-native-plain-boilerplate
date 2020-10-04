@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["es6"],
+    "allowJs": true,
+    "jsx": "react-native",
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["*"],
+      "@assets": ["assets"],
+      "@assets/*": ["assets/*"],
+      "@components": ["src/components"],
+      "@components/*": ["src/components/*"],
+      "@primitive": ["src/components/primitive"],
+      "@primitive/*": ["src/components/primitive/*"],
+      "@icons": ["src/components/icons"],
+      "@icons/*": ["src/components/icons"],
+      "@context": ["src/context"],
+      "@context/*": ["src/context/*"],
+      "@definitions": ["src/definitions"],
+      "@definitions/*": ["src/definitions/*"],
+      "@navigation": ["src/navigation"],
+      "@navigation/*": ["src/navigation/*"],
+      "@screens": ["src/screens"],
+      "@screens/*": ["src/screens/*"],
+      "@typings": ["src/typings"],
+      "@typings/*": ["src/typings/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules", "metro.config.js"]
+}
