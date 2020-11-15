@@ -17,8 +17,7 @@ import { styled } from '@definitions/styled';
 export type TextType = LayoutProps & ColorProps & SpaceProps & TypographyProps & BorderProps & TextProps;
 
 export const Text = styled.Text<TextType>`
-  ${({ extraStyle }) => extraStyle && extraStyle};
-
+  font-family: 'Poppins-Regular';
   ${color};
   ${space};
   ${typography};
