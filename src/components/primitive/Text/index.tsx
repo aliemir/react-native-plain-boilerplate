@@ -1,10 +1,20 @@
 import { TextProps } from 'react-native';
-import { CSSProp } from 'styled-components';
-import { ColorProps, SpaceProps, TypographyProps, BorderProps, color, space, typography, border } from 'styled-system';
+import {
+  ColorProps,
+  SpaceProps,
+  TypographyProps,
+  BorderProps,
+  LayoutProps,
+  color,
+  space,
+  typography,
+  border,
+  layout,
+} from 'styled-system';
 
 import { styled } from '@definitions/styled';
 
-export type TextType = ColorProps & SpaceProps & TypographyProps & BorderProps & TextProps & { extraStyle?: CSSProp };
+export type TextType = LayoutProps & ColorProps & SpaceProps & TypographyProps & BorderProps & TextProps;
 
 export const Text = styled.Text<TextType>`
   ${({ extraStyle }) => extraStyle && extraStyle};
@@ -13,4 +23,5 @@ export const Text = styled.Text<TextType>`
   ${space};
   ${typography};
   ${border};
+  ${layout};
 `;
