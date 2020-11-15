@@ -7,7 +7,7 @@ export const Navigation = () => {
   const Stack = createStackNavigator();
 
   return (
-    <Stack.Navigator screenOptions={}>
+    <Stack.Navigator>
       <Stack.Screen name="Home" component={Home} />
     </Stack.Navigator>
   );
