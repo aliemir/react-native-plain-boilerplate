@@ -12,7 +12,7 @@ import {
   layout,
 } from 'styled-system';
 
-import { styled } from '@definitions/styled';
+import styled from '@definitions/styled';
 
 export type TextType = LayoutProps & ColorProps & SpaceProps & TypographyProps & BorderProps & TextProps;
 

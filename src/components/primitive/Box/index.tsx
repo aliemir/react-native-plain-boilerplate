@@ -18,7 +18,7 @@ import {
   PositionProps,
 } from 'styled-system';
 
-import { styled } from '@definitions/styled';
+import styled from '@definitions/styled';
 
 export type ViewType = SpaceProps &
   FlexboxProps &
