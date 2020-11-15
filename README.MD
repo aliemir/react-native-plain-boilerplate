@@ -15,6 +15,7 @@ Stop wasting your time with basic configurations and start having results.
 - styled-system
 - svgr/cli
 - path aliases
+- react-native-fast-image
 
 ## Folder Structure
 
@@ -45,6 +46,10 @@ Stop wasting your time with basic configurations and start having results.
 ├── react-native.config.js
 └── tsconfig.json
 ```
+
+## Example Screen
+
+![home screen](assets/images/home-screen.png)
 
 ## Contributing
 
