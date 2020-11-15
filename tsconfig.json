@@ -32,7 +32,8 @@
       "@typings/*": ["src/typings/*"]
     },
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "typeRoots": ["src/typings"]
   },
   "exclude": ["node_modules", "metro.config.js"]
 }
