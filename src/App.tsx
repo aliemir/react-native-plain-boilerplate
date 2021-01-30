@@ -1,22 +1,26 @@
-import 'react-native-gesture-handler';
-import React from 'react';
-import { SafeAreaProvider } from 'react-native-safe-area-view';
-import { NavigationContainer } from '@react-navigation/native';
+import "react-native-gesture-handler";
+import React from "react";
+import { SafeAreaProvider } from "react-native-safe-area-view";
+import { NavigationContainer } from "@react-navigation/native";
 
-import { Navigation } from '@navigation';
-import { useTheme, ThemeProvider } from '@definitions/styled';
+import { useTheme, ThemeProvider } from "@/styled";
+import { RootNavigation } from "@/navigation";
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+declare const global: { HermesInternal: null | {} };
 
 const App = () => {
   const theme = useTheme();
-
   return (
-    <ThemeProvider theme={theme}>
-      <SafeAreaProvider>
+    <>
+      <ThemeProvider theme={theme}>
         <NavigationContainer>
-          <Navigation />
+          <SafeAreaProvider>
+            <RootNavigation />
+          </SafeAreaProvider>
         </NavigationContainer>
-      </SafeAreaProvider>
-    </ThemeProvider>
+      </ThemeProvider>
+    </>
   );
 };
 

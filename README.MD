@@ -8,48 +8,13 @@ Stop wasting your time with basic configurations and start having results.
 
 ## What's in it?
 
-- react-native v0.63.2
+- react-native v0.63.4
 - typescript
 - react-navigation
 - styled-components
 - styled-system
 - svgr/cli
 - path aliases
-- react-native-fast-image
-
-## Folder Structure
-
-```bash
-├── android/
-├── ios/
-├── assets
-│   ├── fonts/
-│   ├── images/
-│   └── svg/
-├── src
-│   ├── App.tsx
-│   ├── components/
-│   │   ├── icons/
-│   │   └── primitive/
-│   ├── context/
-│   ├── definitions/
-│   │   └── styled/
-│   ├── navigation/
-│   ├── screens/
-│   └── typings/
-├── app.json
-├── global.d.ts
-├── index.js
-├── metro.config.js
-├── package-lock.json
-├── package.json
-├── react-native.config.js
-└── tsconfig.json
-```
-
-## Example Screen
-
-![home screen](assets/images/home-screen.png)
 
 ## Contributing
 

@@ -3,12 +3,12 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'ReactNativePlainBoilerplate' do
+target 'rnplainboilerplate' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
 
-  target 'ReactNativePlainBoilerplateTests' do
+  target 'rnplainboilerplateTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -23,10 +23,10 @@ target 'ReactNativePlainBoilerplate' do
   end
 end
 
-target 'ReactNativePlainBoilerplate-tvOS' do
-  # Pods for ReactNativePlainBoilerplate-tvOS
+target 'rnplainboilerplate-tvOS' do
+  # Pods for rnplainboilerplate-tvOS
 
-  target 'ReactNativePlainBoilerplate-tvOSTests' do
+  target 'rnplainboilerplate-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
